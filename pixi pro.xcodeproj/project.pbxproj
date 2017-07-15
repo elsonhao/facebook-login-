@@ -12,9 +12,12 @@
 		AFB644251F19FBF8000D94A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB644231F19FBF8000D94A3 /* Main.storyboard */; };
 		AFB644271F19FBF8000D94A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB644261F19FBF8000D94A3 /* Assets.xcassets */; };
 		AFB6442A1F19FBF8000D94A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB644281F19FBF8000D94A3 /* LaunchScreen.storyboard */; };
+		E6C267A545FCBB8BD957728F /* Pods_pixi_pro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07F4C258658B0F9DD2C9CAB1 /* Pods_pixi_pro.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07F4C258658B0F9DD2C9CAB1 /* Pods_pixi_pro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pixi_pro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BBF3C8C1AE4B739115C7667 /* Pods-pixi pro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixi pro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pixi pro/Pods-pixi pro.debug.xcconfig"; sourceTree = "<group>"; };
 		AFB6441C1F19FBF8000D94A3 /* pixi pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pixi pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB6441F1F19FBF8000D94A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFB644211F19FBF8000D94A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		AFB644261F19FBF8000D94A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFB644291F19FBF8000D94A3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFB6442B1F19FBF8000D94A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2BCFF51F5C3FA6A5E1252E /* Pods-pixi pro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixi pro.release.xcconfig"; path = "Pods/Target Support Files/Pods-pixi pro/Pods-pixi pro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6C267A545FCBB8BD957728F /* Pods_pixi_pro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		710F0336E774E4C23FDCDBD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07F4C258658B0F9DD2C9CAB1 /* Pods_pixi_pro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AFB644131F19FBF8000D94A3 = {
 			isa = PBXGroup;
 			children = (
 				AFB6441E1F19FBF8000D94A3 /* pixi pro */,
 				AFB6441D1F19FBF8000D94A3 /* Products */,
+				F4EB2D92075972134B99FB5A /* Pods */,
+				710F0336E774E4C23FDCDBD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = "pixi pro";
 			sourceTree = "<group>";
 		};
+		F4EB2D92075972134B99FB5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8BBF3C8C1AE4B739115C7667 /* Pods-pixi pro.debug.xcconfig */,
+				DF2BCFF51F5C3FA6A5E1252E /* Pods-pixi pro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFB6442E1F19FBF8000D94A3 /* Build configuration list for PBXNativeTarget "pixi pro" */;
 			buildPhases = (
+				0E67BCD8B69803798A5B8249 /* [CP] Check Pods Manifest.lock */,
 				AFB644181F19FBF8000D94A3 /* Sources */,
 				AFB644191F19FBF8000D94A3 /* Frameworks */,
 				AFB6441A1F19FBF8000D94A3 /* Resources */,
+				D8B6D47D7AC1B43F6A186B67 /* [CP] Embed Pods Frameworks */,
+				69E1E7722C63826530B63EA6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E67BCD8B69803798A5B8249 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		69E1E7722C63826530B63EA6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pixi pro/Pods-pixi pro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8B6D47D7AC1B43F6A186B67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pixi pro/Pods-pixi pro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AFB644181F19FBF8000D94A3 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		AFB6442F1F19FBF8000D94A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BBF3C8C1AE4B739115C7667 /* Pods-pixi pro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U55RL8468U;
@@ -270,6 +346,7 @@
 		};
 		AFB644301F19FBF8000D94A3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF2BCFF51F5C3FA6A5E1252E /* Pods-pixi pro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U55RL8468U;
